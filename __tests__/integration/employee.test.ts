@@ -32,8 +32,7 @@ describe('Create employee', () => {
         email: employee.email
       });
     } catch(err) {
-      const repeat_employee = err.errors[0].value;
-      expect(employee.email).toEqual(repeat_employee);
+      expect(err.original.errno).toEqual(19);
     }
   });
 });
