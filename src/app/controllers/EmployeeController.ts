@@ -30,7 +30,7 @@ class EmployeeController {
 
     const employee = await Employee.create({ id, name, email });
 
-    return response.status(201).json(employee);
+    return response.status(201).send();
   }
 }
 
