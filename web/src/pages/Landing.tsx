@@ -22,7 +22,7 @@ export default function Landing() {
         </Text>
 
         <Image>
-          <img src={landing} alt="Landing" className='landing'/>
+          <img src={landing} alt='Landing' className='landing'/>
         </Image>
       </Home>
     </Container>
